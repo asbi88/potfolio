@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PayPal QA Testing Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003087;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #003087;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+      color: #333;
+    }
+    .file-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .file-card {
+      flex: 1 1 220px;
+      background-color: #e6f0ff;
+      border-left: 6px solid #003087;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .file-card h3 {
+      margin-top: 0;
+      color: #003087;
+    }
+    .file-card p {
+      flex-grow: 1;
+    }
+    .btn-group {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+    .download-btn, .view-btn {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.3s ease;
+      flex: 1;
+    }
+    .download-btn {
+      background-color: #003087;
+    }
+    .download-btn:hover {
+      background-color: #001f5c;
+    }
+    .view-btn {
+      background-color: #00b5e2;
+    }
+    .view-btn:hover {
+      background-color: #009ac4;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003087;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PayPal QA Testing Project</h1>
+    <p>Software Quality Assurance Documentation</p>
+  </header>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>This QA testing project focuses on the PayPal payment system, ensuring that key features such as sending and receiving payments are tested thoroughly. The goal is to validate functionality, usability, and security through a series of structured testing phases.</p>
+  </section>
+
+  <section>
+    <h2>Tools Used</h2>
+    <ul>
+      <li>Jira – Bug Tracking</li>
+      <li>Selenium – Automated Testing</li>
+      <li>Postman – API Testing</li>
+      <li>TestLink – Test Case Management</li>
+      <li>Microsoft Excel/Word – Documentation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Project Files</h2>
+    <div class="file-list">
+      <div class="file-card">
+        <h3>STP</h3>
+        <p>Software Test Plan detailing the scope, objectives, and approach of testing PayPal features.</p>
+        <div class="btn-group">
+          <a href="files/STP_PayPal_English.docx" class="download-btn" download>Download Word</a>
+          <a href="files/stp.pdf" class="view-btn" target="_blank" rel="noopener noreferrer">View</a>
+        </div>
+      </div>
+      <div class="file-card">
+        <h3>STD</h3>
+        <p>Software Test Design containing test cases for login, send/receive money, and error handling.</p>
+        <div class="btn-group">
+          <a href="files/STD_Paypal.xlsx" class="download-btn" download>Download Excel</a>
+          <a href="assets/stdPic.png" class="view-btn" target="_blank" rel="noopener noreferrer">View</a>
+        </div>
+      </div>
+      <div class="file-card">
+        <h3>STR</h3>
+        <p>Software Test Report summarizing test results and coverage with analysis.</p>
+        <div class="btn-group">
+          <a href="files/STR_Paypal.docx" class="download-btn" download>Download Word</a>
+          <a href="files/str.pdf" class="view-btn" target="_blank" rel="noopener noreferrer">View</a>
+        </div>
+      </div>
+      <div class="file-card">
+        <h3>Bug Report</h3>
+        <p>Defect log showing identified bugs, severity, priority, and status during test cycles.</p>
+        <div class="btn-group">
+          <a href="files/Bug_Report_Template.xlsx" class="download-btn" download>Download Excel</a>
+          <a href="assets/bugReprt.png" class="view-btn" target="_blank" rel="noopener noreferrer">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  
+  </footer>
+
+</body>
+</html>

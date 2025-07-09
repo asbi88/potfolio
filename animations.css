@@ -1,0 +1,59 @@
+/* Fade-in & Slide-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section__text,
+.section__pic-container,
+.details-container,
+.article-container,
+.project-img,
+.contact-info-container {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Delay for staggered animation effect */
+.section__text:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.section__text:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.section__pic-container {
+  animation-delay: 0.6s;
+}
+
+.article-container article {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article-container article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Icon hover animation */
+.icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
